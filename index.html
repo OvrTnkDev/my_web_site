@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Fabio D'alessandro</title>
+    <title>Profilo - Fabio D'alessandro</title>
     
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,17 +16,48 @@
 
     <div class="container">
         <header>
+            <img src="https://github.com/OvrTnkDev.png" alt="Profilo" class="profile-icon">
             <h1>Fabio D'alessandro</h1>
-            <p class="subtitle">IT Student & Web Developer</p>
+            <p class="subtitle">Junior Software Engineer | Data & Backend</p>
         </header>
 
         <div class="section">
-            <h2>Formazione</h2>
-            <p><strong>Università Telematica Pegaso</strong><br>
-            Corso di Laurea: Informatica per le aziende Digitali (L-31) - 2° Anno</p>
+            <h2><i class="fas fa-user"></i> Chi Sono</h2>
+            <p>Sviluppatore software focalizzato su C#/.NET, SQL e Python. Integro l'architettura .NET con tecniche di Data Science e Machine Learning per creare soluzioni backend scalabili e data-driven.</p>
         </div>
 
         <div class="section">
-            <h2>Competenze Tecniche</h2>
-            <p>Clicca per renderizzare lo stack tecnologico:</p>
-            <button id="btn-skills" py-click="carica_competenze
+            <h2><i class="fas fa-briefcase"></i> Esperienza</h2>
+            <p><strong>Sofarma Morra S.p.A.</strong> | Data Analyst & Software Developer (Set 2024 - Set 2025)<br>
+            Sviluppo pipeline ETL (SQL + Python/Pandas) e automazione processi IT.</p>
+            <p><strong>Euronics Tufano</strong> | Junior Software Developer (Mar 2024 - Lug 2024)<br>
+            Manutenzione ERP su ambiente IBM iSeries e supporto tecnico.</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-graduation-cap"></i> Formazione</h2>
+            <p><strong>Università Telematica Pegaso</strong> | Informatica per Aziende Digitali (L-31) - 2° Anno</p>
+            <p><strong>ITConsulting S.p.A.</strong> | Academy Python, Machine Learning & C# Advanced</p>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-code"></i> Competenze Tecniche</h2>
+            <p>Clicca per caricare lo stack tecnologico:</p>
+            <button id="btn-skills" py-click="carica_competenze">Mostra Stack</button>
+            <div id="skills-container" class="skills-list"></div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-address-card"></i> Contatti</h2>
+            <div class="contact-links">
+                <a href="mailto:dalessandrofabio96@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/OvrTnkDev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/fabio-d-alessandro-a06038130" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <py-script src="./script.py"></py-script>
+
+</body>
+</html>

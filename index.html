@@ -7,14 +7,13 @@
     
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
 
-    <div class="container">
+    <div class="container fade-in-up">
         <header>
             <img src="https://github.com/OvrTnkDev.png" alt="Profilo" class="profile-icon">
             <h1>Fabio D'alessandro</h1>
@@ -28,22 +27,22 @@
 
         <div class="section">
             <h2><i class="fas fa-briefcase"></i> Esperienza</h2>
-            <p><strong>Sofarma Morra S.p.A.</strong> | Data Analyst & Software Developer (Set 2024 - Set 2025)<br>
-            Sviluppo pipeline ETL (SQL + Python/Pandas) e automazione processi IT.</p>
-            <p><strong>Euronics Tufano</strong> | Junior Software Developer (Mar 2024 - Lug 2024)<br>
-            Manutenzione ERP su ambiente IBM iSeries e supporto tecnico.</p>
-        </div>
-
-        <div class="section">
-            <h2><i class="fas fa-graduation-cap"></i> Formazione</h2>
-            <p><strong>Università Telematica Pegaso</strong> | Informatica per Aziende Digitali (L-31) - 2° Anno</p>
-            <p><strong>ITConsulting S.p.A.</strong> | Academy Python, Machine Learning & C# Advanced</p>
+            <div class="card-experience">
+                <p><strong>Sofarma Morra S.p.A.</strong> | Data Analyst & Software Developer</p>
+                <p class="details">Sviluppo pipeline ETL (SQL + Python/Pandas) e automazione processi IT.</p>
+            </div>
+            <div class="card-experience">
+                <p><strong>Euronics Tufano</strong> | Junior Software Developer</p>
+                <p class="details">Manutenzione ERP su ambiente IBM iSeries e supporto tecnico.</p>
+            </div>
         </div>
 
         <div class="section">
             <h2><i class="fas fa-code"></i> Competenze Tecniche</h2>
-            <p>Clicca per caricare lo stack tecnologico:</p>
-            <button id="btn-skills" py-click="carica_competenze">Mostra Stack</button>
+            <p>Clicca per avviare il rendering dello stack:</p>
+            <button id="btn-skills" py-click="carica_competenze">
+                <i class="fas fa-terminal"></i> Inizializza Stack
+            </button>
             <div id="skills-container" class="skills-list"></div>
         </div>
         
@@ -52,12 +51,12 @@
             <div class="contact-links">
                 <a href="mailto:dalessandrofabio96@gmail.com"><i class="fas fa-envelope"></i> Email</a>
                 <a href="https://github.com/OvrTnkDev" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/fabio-d-alessandro-a06038130" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.linkedin.com/in/fabio-d-alessandro-a06a3813a" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </div>
 
-    <py-script src="./script.py"></py-script>
+    <py-script src="script/script.py"></py-script>
 
 </body>
 </html>

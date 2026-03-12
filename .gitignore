@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local history for JetBrains IDEs
+#  JetBrains IDEs maintain a local history of changes, which can consume significant disk space
+#  over time. Ignoring the `.idea/localHistory` directory can help manage this storage
+#  without affecting the main project files. For more information, see:
+#  https://www.jetbrains.com/help/idea/local-history.html
+.idea/localHistory/
+
+.vscode/

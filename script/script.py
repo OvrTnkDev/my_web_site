@@ -1,7 +1,6 @@
 from pyscript import document
 
 def carica_competenze(event):
-    # Competenze estratte dal tuo background
     competenze = [
         "C# / .NET", 
         "Python (Pandas, Scikit-learn)", 
@@ -16,10 +15,20 @@ def carica_competenze(event):
     container = document.querySelector("#skills-container")
     container.innerHTML = "" 
     
-    for skill in competenze:
+    # Renderizziamo gli elementi aggiungendo un delay matematico
+    for indice, skill in enumerate(competenze):
         tag = document.createElement("span")
         tag.className = "skill-tag"
         tag.innerText = skill
+        
+        # Aggiungiamo 0.1s di ritardo in più per ogni competenza
+        ritardo = indice * 0.1
+        tag.style.animationDelay = f"{ritardo}s"
+        
         container.appendChild(tag)
         
-    document.querySelector("#btn-skills").style.display = "none"
+    # Facciamo sparire il bottone con una transizione pulita
+    bottone = document.querySelector("#btn-skills")
+    bottone.style.transition = "opacity 0.4s ease, height 0.4s ease"
+    bottone.style.opacity = "0"
+    bottone.style.pointerEvents = "none"

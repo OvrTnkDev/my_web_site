@@ -1,7 +1,17 @@
 from pyscript import document
 
 def carica_competenze(event):
-    competenze = ["HTML5", "CSS3", "Python", "C#", "SQL", "Git & GitHub", "Problem Solving"]
+    # Competenze estratte dal tuo background
+    competenze = [
+        "C# / .NET", 
+        "Python (Pandas, Scikit-learn)", 
+        "SQL (DB2, Ottimizzazione)", 
+        "Ingegneria ETL",
+        "Machine Learning", 
+        "ASP.NET Core", 
+        "Git & GitHub", 
+        "Problem Solving"
+    ]
     
     container = document.querySelector("#skills-container")
     container.innerHTML = "" 

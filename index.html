@@ -3,67 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto Web</title>
+    <title>CV - Fabio D'alessandro</title>
     
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .card {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 400px;
-        }
-        h1 { color: #2c3e50; }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover { background-color: #2980b9; }
-        #output {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #27ae60;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <h1>Benvenuto</h1>
-        <p>Sito statico con HTML, CSS e Python eseguito nel browser.</p>
-        
-        <button id="btn-saluto" py-click="mostra_messaggio">Esegui Python</button>
-        
-        <p id="output"></p>
-    </div>
+    <div class="container">
+        <header>
+            <h1>Fabio D'alessandro</h1>
+            <p class="subtitle">IT Student & Web Developer</p>
+        </header>
 
-    <py-script>
-        from pyscript import document
+        <div class="section">
+            <h2>Formazione</h2>
+            <p><strong>Università Telematica Pegaso</strong><br>
+            Corso di Laurea: Informatica per le aziende Digitali (L-31) - 2° Anno</p>
+        </div>
 
-        def mostra_messaggio(event):
-            elemento_output = document.querySelector("#output")
-            elemento_output.innerText = "Ciao Fabio! Questo testo è generato da Python."
-    </py-script>
-
-</body>
-</html>
+        <div class="section">
+            <h2>Competenze Tecniche</h2>
+            <p>Clicca per renderizzare lo stack tecnologico:</p>
+            <button id="btn-skills" py-click="carica_competenze

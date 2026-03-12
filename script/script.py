@@ -3,17 +3,16 @@ from pyscript import document
 def carica_competenze(event):
     competenze = [
         "C# / .NET", 
-        "Python (Pandas, Scikit-learn)", 
-        "SQL (DB2, Ottimizzazione)", 
+        "Python (Numpy, Pandas, Scikit-learn)", 
+        "SQL (DB2, MySQL, Ottimizzazione)", 
         "Ingegneria ETL",
         "Machine Learning", 
-        "ASP.NET Core", 
         "Git & GitHub", 
         "Problem Solving"
     ]
     
     container = document.querySelector("#skills-container")
-    container.innerHTML = "" 
+    container.innerHTML = " " 
     
     # Renderizziamo gli elementi aggiungendo un delay matematico
     for indice, skill in enumerate(competenze):

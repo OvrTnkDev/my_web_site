@@ -1,6 +1,6 @@
 body { 
     font-family: 'Segoe UI', Tahoma, sans-serif; 
-    background-color: #f4f7f6; 
+    background-color: #f0f2f5; 
     color: #333; 
     margin: 0; 
     padding: 20px; 
@@ -12,12 +12,24 @@ body {
     max-width: 800px; 
     background: white; 
     padding: 40px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    border-radius: 12px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3498db;
+    margin-bottom: 10px;
 }
 h1 { 
     color: #2c3e50; 
-    margin-bottom: 5px;
+    margin: 10px 0 5px 0;
 }
 .subtitle {
     color: #7f8c8d;
@@ -29,6 +41,8 @@ h1 {
 h2 { 
     color: #34495e; 
     margin-top: 30px; 
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
 }
 .section { 
     margin-bottom: 25px; 
@@ -58,10 +72,29 @@ button:hover {
     color: #2980b9; 
     padding: 8px 15px; 
     border-radius: 20px; 
-    font-weight: bold; 
-    animation: fadeIn 0.5s ease-in;
+    font-weight: 600; 
+    animation: fadeIn 0.4s ease-in;
+    border: 1px solid #bde0f2;
+}
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.contact-links a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #f4f7f6;
+    transition: 0.3s;
+}
+.contact-links a:hover {
+    background: #3498db;
+    color: white;
 }
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
 }

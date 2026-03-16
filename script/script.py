@@ -3,7 +3,7 @@ from pyscript import document
 def carica_competenze(event):
     competenze = [
         "C# / .NET", 
-        "Python (Numpy, Pandas, Scikit-learn)", 
+        "Python (Django, Numpy, Pandas, Scikit-learn)", 
         "SQL (DB2, MySQL, Ottimizzazione)", 
         "Ingegneria ETL",
         "Machine Learning", 

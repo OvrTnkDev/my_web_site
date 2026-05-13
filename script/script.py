@@ -7,7 +7,7 @@ def carica_competenze(event):
         "Python (Django, Numpy, Pandas)", 
         "SQL (DB2, MySQL, SQL Server, Ottimizzazione)",
         "Git & GitHub", 
-        "Problem Solving"
+        "Troubleshooting"
     ]
     
     container = document.querySelector("#skills-container")

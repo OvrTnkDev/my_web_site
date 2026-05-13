@@ -35,7 +35,7 @@ body {
 
 header { text-align: center; margin-bottom: 40px; }
 
-.profile-icon {
+.profile-pic {
     width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -45,7 +45,7 @@ header { text-align: center; margin-bottom: 40px; }
     margin-bottom: 15px;
     transition: transform 0.4s ease;
 }
-.profile-icon:hover { transform: scale(1.05) rotate(3deg); }
+.profile-pic:hover { transform: scale(1.05) rotate(3deg); }
 
 h1 { font-size: 2.5em; margin: 10px 0 5px 0; letter-spacing: -0.5px; }
 
@@ -67,6 +67,19 @@ h2 {
 }
 
 .section { margin-bottom: 30px; line-height: 1.7; font-size: 1.05em; }
+
+.card-study {
+    background: #fff;
+    border-left: 4px solid var(--secondary);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease;
+}
+.card-study:hover { transform: translateX(5px); }
+.card-study p { margin: 0; }
+.card-study .details { color: var(--text-light); font-size: 0.9em; margin-top: 5px; }
 
 .card-experience {
     background: #fff;

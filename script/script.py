@@ -2,11 +2,10 @@ from pyscript import document
 
 def carica_competenze(event):
     competenze = [
+        "RPA (Blue Prism)",
         "C# / .NET", 
         "Python (Django, Numpy, Pandas, Scikit-learn)", 
-        "SQL (DB2, MySQL, Ottimizzazione)", 
-        "Ingegneria ETL",
-        "Machine Learning", 
+        "SQL (DB2, MySQL, Ottimizzazione)",
         "Git & GitHub", 
         "Problem Solving"
     ]

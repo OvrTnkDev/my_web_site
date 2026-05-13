@@ -4,8 +4,8 @@ def carica_competenze(event):
     competenze = [
         "RPA (Blue Prism)",
         "C# / .NET", 
-        "Python (Django, Numpy, Pandas, Scikit-learn)", 
-        "SQL (DB2, MySQL, Ottimizzazione)",
+        "Python (Django, Numpy, Pandas)", 
+        "SQL (DB2, MySQL, SQL Server, Ottimizzazione)",
         "Git & GitHub", 
         "Problem Solving"
     ]

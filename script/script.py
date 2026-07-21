@@ -1,14 +1,13 @@
 from pyscript import document
 
 def carica_competenze(event):
-    competenze = [
-        "RPA (Blue Prism)",
+    competenze = ["RPA (Blue Prism)",
         "C# / .NET", 
-        "Python (Django, Numpy, Pandas)", 
+        "Python (Numpy, Pandas)", 
         "SQL (DB2, MySQL, SQL Server, Ottimizzazione)",
         "Git & GitHub", 
-        "Troubleshooting"
-    ]
+        "Troubleshooting",
+        "RPG (ILE, Free)"]
     
     container = document.querySelector("#skills-container")
     container.innerHTML = " " 
